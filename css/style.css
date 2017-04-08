@@ -79,6 +79,10 @@ div .top-nav {
 	color: black;
 }
 
+div .tech {
+ 		text-align:center;
+ 	}
+
 .tech {
 	font-size: 16px;
 	margin-top: 0px;
@@ -141,10 +145,6 @@ div .top-nav {
 		text-align: center;
 		color: black;
 		text-shadow: 1px 1px #33F9FF;
- 	}
-
- 	div .tech {
- 		text-align:center;
  	}
 
  	.home-social a {
