@@ -17,6 +17,9 @@
   	background: gray;
 }
 
+div {
+	text-align: center;
+}
 
  .home .head {
   width: 100%;
@@ -30,7 +33,7 @@
 div .logo {
   width: 40%;
   color: black;
-  margin-top: 1em;
+  margin-top: 0;
   padding-left: 5%;
 
 }
@@ -40,6 +43,7 @@ div .logo {
   font-size: 34px;
   font-weight: bold;
   text-shadow: -1.5px 1px #33F9FF;
+  padding-left: 15%;
 }
 
 div .top-nav {
@@ -69,23 +73,19 @@ div .top-nav {
 }
 
 .intro {
-	width: 75%;
+	width: 80%;
 	margin-top: 10%;
 	margin-bottom: 0px;
-	font-size: 60px;
+	font-size: 65px;
 	font-weight: bold;
 	text-shadow: 1px 0.5px white;
 	text-align: right;
 	color: black;
 }
 
-div .tech {
- 		text-align:center;
- 	}
-
 .tech {
 	font-size: 16px;
-	margin-top: 0px;
+	margin-top: 2%;
 	text-shadow: none;
 	font-weight: normal;
 	color: rgba(0, 0, 0, 0.5);
@@ -94,7 +94,7 @@ div .tech {
 .home-social a {
 	font-size: 150px;
 	width: 33%;
-	margin-top: 10%;
+	margin-top: 5%;
 	text-shadow: 4px 4px black;
 }
 
@@ -145,6 +145,10 @@ div .tech {
 		text-align: center;
 		color: black;
 		text-shadow: 1px 1px #33F9FF;
+ 	}
+
+ 	div .tech {
+ 		text-align:center;
  	}
 
  	.home-social a {
