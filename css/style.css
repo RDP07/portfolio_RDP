@@ -85,11 +85,11 @@ div .top-nav {
 
 .tech {
 	font-size: 16px;
+	color: black;
 	margin-top: 2%;
 	text-shadow: none;
 	font-weight: normal;
-	color: rgba(0, 0, 0, 0.5);
-	text-shadow: 1px 1px #33F9FF;
+	text-shadow: 0.5px 0.5px #33F9FF;
 }
 
 .home-social a {
