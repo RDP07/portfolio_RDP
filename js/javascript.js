@@ -13,7 +13,13 @@ app.ajax = null;
 
 $('.top-nav').hide();
 
+$('#nav-icon2').click(function() {
+    $(this).toggleClass('open');
+});
 
+$('#nav-icon2').click(function() {
+    $('.top-nav').toggle();
+});
 
 app.ui = {
   
