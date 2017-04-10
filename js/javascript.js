@@ -11,6 +11,10 @@ app.ajax = null;
     $(this).toggleClass('button-open');
   });
 
+$('.top-nav').hide();
+
+
+
 app.ui = {
   
     particle:false,
