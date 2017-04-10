@@ -17,6 +17,10 @@
   	background: gray;
 }
 
+html, body { 
+	width: 100%
+}
+
 div {
 	text-align: center;
 }
@@ -54,7 +58,7 @@ div .top-nav {
   position: absolute;
   height: 8px;
   width: 50px;
-  background: black;
+  background: white;
   opacity: 1;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -186,20 +190,18 @@ div .top-nav {
 	text-shadow: 4px 4px black;
 }
 
-@media(min-width: 900px) {
+@media(min-width: 1000px) {
 	body, html, header {
-		width: 1300px;
+		width: 1000px;
 		margin-right: auto;
 		margin-left: auto;
 	}
 
 }
 
-@media(max-width: 500px) {
-	 html, body {
+@media (min-width: 501px) and (max-width: 800px) {
+	 html, body, header {
 		width: 100%;
-		display: flex;
-		flex-wrap: wrap;
 	}
 
 	div .logo {
@@ -226,19 +228,19 @@ div .top-nav {
 	}
 
 	.intro {
-		margin-right: 5%;
-		font-size: 28px;
-		float: right;
-		width: 100%;
-		margin-bottom: 20%;
-		margin-top: 15%;
+		font-size: 40px;
+		width: 75%;
+		margin: auto;
+		margin-bottom: 10%;
+		margin-top: 10%;
 	}
 
 	.tech {
 		margin-top: 10%;
 		margin-bottom: 10%;
+		margin: auto;
 		font-size: 17px;
-		width: 100%;
+		width: 75%;
 		text-align: center;
 		color: black;
  	}
@@ -248,6 +250,64 @@ div .top-nav {
  	}
 
  	.home-social a {
+ 		font-size: 80px;
+ 		width: calc((100% - 10px) / 3);
+ 		padding: 0px
+ 	}
+}
+
+@media(max-width: 500px) {
+	 html, body, header {
+		width: 100%;
+	}
+
+	div .logo {
+		width: 100%;
+		margin-left: 0px;
+		padding-left: 0px;
+		float: left;
+		padding-left: 5px;
+		padding-top: 5px;
+	}
+
+	.top-nav nav {
+		margin: 0 auto;
+	}
+
+	div .top-nav {
+		width: 100%;
+		float: right;
+		
+	}
+
+	.top-nav button {
+		font-size: 40px;
+	}
+
+	.intro {
+		font-size: 30px;
+		width: 90%;
+		margin: auto;
+		margin-bottom: 10%;
+		margin-top: 20%;
+	}
+
+	.tech {
+		margin-top: 10%;
+		margin-bottom: 10%;
+		margin: auto;
+		font-size: 17px;
+		width: 75%;
+		text-align: center;
+		color: black;
+ 	}
+
+ 	div .tech {
+ 		text-align:center;
+ 	}
+
+ 	.home-social a {
+ 		margin-top: 20%;
  		font-size: 80px;
  		width: calc((100% - 10px) / 3);
  		padding: 0px
