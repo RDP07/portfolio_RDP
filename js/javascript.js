@@ -11,14 +11,13 @@ app.ajax = null;
     $(this).toggleClass('button-open');
   });
 
-$('.top-nav').hide();
 
 $('#nav-icon2').click(function() {
     $(this).toggleClass('open');
 });
 
 $('#nav-icon2').click(function() {
-    $('.top-nav').toggle();
+    $('.top-nav').toggle('open');
 });
 
 app.ui = {

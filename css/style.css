@@ -43,7 +43,7 @@ div .logo {
   font-size: 34px;
   font-weight: bold;
   text-shadow: -1.5px 1px #33F9FF;
-  padding-left: 15%;
+  
 }
 
 div .top-nav {
@@ -145,6 +145,20 @@ div .top-nav {
   border-radius: 8px;
 }
 
+.top-nav {
+	display: none;
+
+}
+
+.top-nav.open {
+	display: inline-block;
+	-webkit-transition: .25s ease-in-out;
+	-moz-transition: .25s ease-in-out;
+	-o-transition: .25s ease-in-out;
+	transition: .25s ease-in-out;
+	
+}
+
 .intro {
 	width: 80%;
 	margin-top: 10%;
@@ -190,16 +204,20 @@ div .top-nav {
 
 	div .logo {
 		width: 100%;
-		padding-left: 2%;
+		margin-left: 0px;
+		padding-left: 0px;
+		float: left;
+		padding-left: 5px;
+		padding-top: 5px;
 	}
 
-	div .top-nav, .top-nav nav {
+	div .top-nav {
 		width: 100%;
-		margin: 0;
+		float: right;
 	}
 
 	.top-nav button {
-		font-size: 16px;
+		font-size: 22px;
 		margin: auto;
 	}
 
