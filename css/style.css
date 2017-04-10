@@ -50,7 +50,7 @@ div .top-nav {
   width: 60%;
 }
 
-#nav-icon2 span {
+#menu-button span {
   display: block;
   position: absolute;
   height: 8px;
@@ -67,58 +67,58 @@ div .top-nav {
   transition: .25s ease-in-out;
 }
 
-#nav-icon2 span:nth-child(even) {
+#menu-button span:nth-child(even) {
   right: 7%;
   margin-top: 15px;
   border-radius: 0 0 0 0;
   display: none;
 }
 
-#nav-icon2 span:nth-child(odd) {
+#menu-button span:nth-child(odd) {
   right: 7%;
   margin-top: 15px;
   border-radius: 0px 0 0px 0;
 }
 
-#nav-icon2 span:nth-child(1), #nav-icon2 span:nth-child(2) {
+#menu-button span:nth-child(1), #menu-button span:nth-child(2) {
   top: 0px;
   
 }
 
-#nav-icon2 span:nth-child(3), #nav-icon2 span:nth-child(4) {
+#menu-button span:nth-child(3), #menu-button span:nth-child(4) {
   top: 15px;
 }
 
-#nav-icon2 span:nth-child(5), #nav-icon2 span:nth-child(6) {
+#menu-button span:nth-child(5), #menu-button span:nth-child(6) {
   top: 30px;
   
 }
 
-#nav-icon2.open span:nth-child(1),#nav-icon2.open span:nth-child(6) {
+#menu-button.open span:nth-child(1),#menu-button.open span:nth-child(6) {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
-#nav-icon2.open span:nth-child(2),#nav-icon2.open span:nth-child(5) {
+#menu-button.open span:nth-child(2),#menu-button.open span:nth-child(5) {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
-#nav-icon2.open span:nth-child(3) {
+#menu-button.open span:nth-child(3) {
   left: 100%;
   opacity: 0;
 }
 
-#nav-icon2.open span:nth-child(4) {
+#menu-button.open span:nth-child(4) {
   left: 100%;
   opacity: 0;
 }
 
-#nav-icon2.open span {
+#menu-button.open span {
   top: 15px;
 }
 
@@ -187,10 +187,11 @@ div .top-nav {
 }
 
 @media(min-width: 900px) {
-	body, html {
+	body, html, header {
 		width: 1300px;
 		margin-right: auto;
 		margin-left: auto;
+		background-color: black;
 	}
 
 }

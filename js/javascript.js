@@ -12,11 +12,11 @@ app.ajax = null;
   });
 
 
-$('#nav-icon2').click(function() {
+$('#menu-button').click(function() {
     $(this).toggleClass('open');
 });
 
-$('#nav-icon2').click(function() {
+$('#menu-button').click(function() {
     $('.top-nav').toggle('open');
 });
 
