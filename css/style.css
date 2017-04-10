@@ -120,8 +120,9 @@ div .top-nav {
 		padding-left: 2%;
 	}
 
-	div .top-nav {
+	div .top-nav, .top-nav nav {
 		width: 100%;
+		margin: 0;
 	}
 
 	.top-nav button {
@@ -131,7 +132,7 @@ div .top-nav {
 
 	.intro {
 		margin-right: 5%;
-		font-size: 31px;
+		font-size: 28px;
 		float: right;
 		width: 100%;
 		margin-bottom: 20%;
@@ -153,7 +154,8 @@ div .top-nav {
 
  	.home-social a {
  		font-size: 80px;
- 		width: 32.7%;
+ 		width: calc((100% - 10px) / 3);
+ 		padding: 0px
  	}
 }
 
