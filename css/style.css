@@ -163,15 +163,17 @@ div .top-nav {
 	
 }
 
-.intro {
-	width: 80%;
-	margin-top: 10%;
-	margin-bottom: 0px;
-	font-size: 65px;
+.home .intro {
+	width: 100%;
+	padding: 0px;
 	font-weight: bold;
 	text-shadow: 1px 0.5px white;
 	text-align: right;
 	color: black;
+}
+
+.intro p {
+	font-size: 75px;
 }
 
 .tech {
@@ -190,19 +192,19 @@ div .top-nav {
 	text-shadow: 4px 4px black;
 }
 
-@media(min-width: 1000px) {
+@media(min-width: 850px) {
 	body, html, header {
-		width: 1000px;
+		width: 850px;
 		margin-right: auto;
 		margin-left: auto;
 	}
-
 }
 
-@media (min-width: 501px) and (max-width: 800px) {
+@media (min-width: 501px) and (max-width: 850px) {
 	 html, body, header {
 		width: 100%;
 	}
+}
 
 	div .logo {
 		width: 100%;
@@ -227,12 +229,15 @@ div .top-nav {
 		font-size: 40px;
 	}
 
-	.intro {
-		font-size: 40px;
-		width: 75%;
+	.home .intro {
+		width: 80%;
 		margin: auto;
 		margin-bottom: 10%;
 		margin-top: 10%;
+	}
+
+	.intro p {
+		font-size: 40px;
 	}
 
 	.tech {
@@ -296,8 +301,8 @@ div .top-nav {
 		margin-top: 10%;
 		margin-bottom: 10%;
 		margin: auto;
-		font-size: 17px;
-		width: 75%;
+		font-size: 19px;
+		width: 90%;
 		text-align: center;
 		color: black;
  	}
