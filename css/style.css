@@ -54,7 +54,7 @@ div .top-nav {
 }
 
 
-section #menu-button span {
+#menu-button span {
   display: block;
   position: absolute;
   left: 72%;
@@ -166,48 +166,45 @@ section #menu-button span {
 	
 }
 
-.home .intro {
+.intro {
+	margin-top: 5%;
 	width: 100%;
 	padding: 0px;
 	font-weight: bold;
 	text-shadow: 1px 0.5px white;
 	text-align: right;
 	color: black;
+	font-size: 67px;
 }
 
-.intro p {
-	font-size: 75px;
-}
-
-.home .tech {
-	font-size: 22px;
+.tech {
+	font-size: 24px;
 	color: black;
-	margin-top: 2%;
+	margin: 10% 5% 10% 5%;
 	text-shadow: none;
 	font-weight: normal;
 	text-shadow: 0.5px 0.5px #33F9FF;
 }
 
-.home .home-social a {
-	font-size: 150px;
+.home-social a {
+	font-size: 175px;
 	width: 33%;
 	margin-top: 5%;
 	text-shadow: 4px 4px black;
 }
 
-@media(min-width: 850px) {
-	body, html, header {
+@media(min-width: 801px) {
+	body, html {
 		width: 850px;
 		margin-right: auto;
 		margin-left: auto;
 	}
 }
 
-@media (min-width: 565px) and (max-width: 850px) {
+@media(min-width: 565px) and (max-width: 800px) {
 	 html, body, header {
 		width: 100%;
 	}
-}
 
 	div .logo {
 		width: 100%;
@@ -216,6 +213,10 @@ section #menu-button span {
 		float: left;
 		padding-left: 5px;
 		padding-top: 5px;
+	}
+
+	section #menu-button span {
+		left: 83%;
 	}
 
 	.top-nav nav {
@@ -232,20 +233,17 @@ section #menu-button span {
 		font-size: 40px;
 	}
 
-	.home .intro {
+	.intro {
 		width: 80%;
 		margin: auto;
-		margin-bottom: 10%;
-		margin-top: 10%;
-	}
-
-	.intro p {
+		margin-bottom: 5%;
+		margin-top: 20%;
 		font-size: 40px;
 	}
 
 	.tech {
-		margin-top: 10%;
-		margin-bottom: 10%;
+		margin-top: 20%;
+		margin-bottom: 20%;
 		margin: auto;
 		font-size: 17px;
 		width: 75%;
@@ -258,6 +256,7 @@ section #menu-button span {
  	}
 
  	.home-social a {
+ 		margin-top: 20%;
  		font-size: 80px;
  		width: calc((100% - 10px) / 3);
  		padding: 0px
@@ -278,6 +277,10 @@ section #menu-button span {
 		padding-top: 5px;
 	}
 
+	section #menu-button span {
+		left: 83%;
+	}
+
 	.top-nav nav {
 		margin: 0 auto;
 	}
@@ -292,17 +295,17 @@ section #menu-button span {
 		font-size: 40px;
 	}
 
-	.home .intro {
+	.intro {
 		font-size: 30px;
 		width: 90%;
 		margin: auto;
-		margin-bottom: 10%;
-		margin-top: 20%;
+		margin-bottom: 20%;
+		margin-top: 5%;
 	}
 
 	.tech {
-		margin-top: 10%;
-		margin-bottom: 10%;
+		margin-top: 20%;
+		margin-bottom: 20%;
 		margin: auto;
 		font-size: 19px;
 		width: 90%;
