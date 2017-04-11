@@ -65,6 +65,7 @@ div .top-nav {
   width: 50px;
   background: black;
   opacity: 1;
+  z-index: 2;
   border: solid #33F9FF 0.1px;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -133,18 +134,21 @@ div .top-nav {
 
 
 .top-nav nav {
-   margin-top: 0.75em;
-   float: right;
-   
+   margin-top: 1em;   
+}
 
+.top-nav {
+	position: fixed;
+	left: 30%;
+	top: 0px;
 }
 
 .top-nav a {
-  font-size: 35px;
-  background: transparent;
-  color: black;
-  text-shadow: 1px 0.5px #33F9FF;
-  border: none;
+	font-size: 35px;
+	background: transparent;
+	color: black;
+	text-shadow: 1px 0.5px #33F9FF;
+	border: none;
  }
 
 .btn:hover {
@@ -154,11 +158,14 @@ div .top-nav {
   border-radius: 8px;
 }
 
-.top-nav {
-	right: 475px;
-	display: none;
+#nav-anchor {
 	position: fixed;
+	float: right;
+}
+.top-nav {
+	display: none;
 	z-index: 1;
+
 }
 
 .top-nav.open {
@@ -200,30 +207,37 @@ div .top-nav {
 
 #about {
 	width: 100%;
-	margin-top: 10%;
+	margin-top: 20%;
 	display: flex;
 	flex-wrap: wrap;
-	background-color: rgba(0, 0, 0, 0.6);
+	border-top: solid black;
+}
+
+.bio {
+	margin: 21% 5% 21% 5%;
 }
 
 .bio-text {
-	width: 40%;
+	width: 50%;
 	float: left;
 	font-size:24px;
 	color: white;
 	text-align: left;
+	text-shadow:  2px 2px black;
 }
 
 .bio-pic {
-	width: 60%;
+	width: 50%;
 	float: right;
+	text-align: right;
 }
 
 #me {
 	border-radius: 100%;
-	width: 60%;
-	position: relative;
-	
+	width: 75%;
+	margin-left: 10px;
+	border-right: solid black 3px;
+	border-bottom: solid black 3px;
 }
 
 
@@ -310,20 +324,36 @@ div .top-nav {
 		width: 100%;
 	}
 
+	.head {
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
+	}
+
 	div .logo {
 		width: 100%;
 		margin-left: 0px;
 		padding-left: 0px;
 		float: left;
 		padding-left: 5px;
-		padding-top: 5px;
+		padding-top: 15%;
+		text-align:center;
 	}
+
 
 	section #menu-button span {
 		left: 83%;
 	}
 
+	.top-nav {
+		left: 1%;
+		top: 1.5%;
+		order: 1;
+		width: 100%;
+	}
+
 	.top-nav nav {
+		margin-top: 10%;
 		margin: 0 auto;
 	}
 
@@ -342,7 +372,7 @@ div .top-nav {
 		width: 90%;
 		margin: auto;
 		margin-bottom: 20%;
-		margin-top: 5%;
+		margin-top: 3%;
 	}
 
 	.tech {
@@ -361,10 +391,33 @@ div .top-nav {
 
  	.home-social a {
  		margin-top: 20%;
+ 		margin-bottom: 15%;
  		font-size: 80px;
  		width: calc((100% - 10px) / 3);
  		padding: 0px
  	}
+
+ 	.bio {
+ 		margin-top: 12%;
+ 		display: flex;
+ 		align-items: flex-start;
+ 		flex-direction: column;
+ 	}
+
+ 	.bio-text {
+ 		order: 2;
+ 		width: 100%;
+ 	}
+
+ 	.bio-pic {
+ 		order: 1;
+ 		width: 100%;
+ 		margin-top: 10%;
+ 		float: none;
+ 		text-align: center;
+ 	}
+
+
 }
 
 

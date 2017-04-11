@@ -28,9 +28,6 @@ app.ajax = null;
 
 $('#menu-button').click(function() {
     $(this).toggleClass('open');
-});
-
-$('#menu-button').click(function() {
     $('.top-nav').toggle('open');
 });
 
