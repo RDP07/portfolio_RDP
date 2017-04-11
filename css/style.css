@@ -255,13 +255,18 @@ div .top-nav {
 		margin-right: auto;
 		margin-left: auto;
 	}
+
+	.top-nav {
+		top: -0.5%;
+		width: 100%;
+	}
 }
 
 @media(min-width: 565px) and (max-width: 800px) {
 	 html, body, header {
 		width: 100%;
 	}
-
+	
 	div .logo {
 		width: 100%;
 		margin-left: 0px;
@@ -273,6 +278,12 @@ div .top-nav {
 
 	section #menu-button span {
 		left: 83%;
+	}
+
+	.top-nav {
+		left: 0;
+		top: 1.5%;
+		width: 100%;
 	}
 
 	.top-nav nav {
@@ -370,7 +381,7 @@ div .top-nav {
 	.intro {
 		font-size: 30px;
 		width: 90%;
-		margin: auto;
+		margin-left: 1%;
 		margin-bottom: 20%;
 		margin-top: 3%;
 	}
@@ -378,8 +389,7 @@ div .top-nav {
 	.tech {
 		margin-top: 20%;
 		margin-bottom: 20%;
-		margin: auto;
-		font-size: 19px;
+		font-size: 20px;
 		width: 90%;
 		text-align: center;
 		color: black;
@@ -391,14 +401,12 @@ div .top-nav {
 
  	.home-social a {
  		margin-top: 20%;
- 		margin-bottom: 15%;
- 		font-size: 80px;
- 		width: calc((100% - 10px) / 3);
+ 		font-size: 120px;
+ 		width: calc((100% - 25px) / 3);
  		padding: 0px
  	}
 
  	.bio {
- 		margin-top: 12%;
  		display: flex;
  		align-items: flex-start;
  		flex-direction: column;
@@ -407,14 +415,19 @@ div .top-nav {
  	.bio-text {
  		order: 2;
  		width: 100%;
+ 		border-top: solid black;
+ 		padding-top: 5%;
  	}
 
  	.bio-pic {
  		order: 1;
  		width: 100%;
- 		margin-top: 10%;
+ 		margin-top: 5%;
+ 		margin-bottom: 5%;
  		float: none;
  		text-align: center;
+ 		border-top: solid black;
+ 		padding-top: 5%;
  	}
 
 
