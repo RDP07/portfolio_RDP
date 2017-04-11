@@ -29,6 +29,8 @@ div {
 	height: 100vh;
 }
 
+
+
  .head {
   width: 100%;
   display: flex;
@@ -182,7 +184,7 @@ div .top-nav {
 	width: 100%;
 	padding: 0px;
 	font-weight: bold;
-	text-shadow: 1px 0.5px white;
+	text-shadow: 1px 0.5px #f235d5;
 	text-align: right;
 	color: black;
 	font-size: 67px;
@@ -202,16 +204,20 @@ div .top-nav {
 	width: 33%;
 	margin-top: 5%;
 	text-shadow: 4px 4px black;
+	padding-bottom: 5%;
 }
 
 
 #about {
 	width: 100%;
-	margin-top: 20%;
+	margin-top: 25%;
+	margin-bottom: 25%;
 	display: flex;
 	flex-wrap: wrap;
 	border-top: solid black;
+	border-bottom: solid black;
 }
+
 
 .bio {
 	margin: 21% 5% 21% 5%;
@@ -221,9 +227,9 @@ div .top-nav {
 	width: 50%;
 	float: left;
 	font-size:24px;
-	color: white;
+	color: black;
 	text-align: left;
-	text-shadow:  2px 2px black;
+	text-shadow:  1px 1px #f235d5;
 }
 
 .bio-pic {
@@ -239,13 +245,6 @@ div .top-nav {
 	border-right: solid black 3px;
 	border-bottom: solid black 3px;
 }
-
-
-
-
-
-
-
 
 
 
@@ -430,8 +429,9 @@ div .top-nav {
  		padding-top: 5%;
  	}
 
-
 }
+
+
 
 
 
