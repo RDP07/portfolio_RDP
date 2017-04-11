@@ -25,12 +25,15 @@ div {
 	text-align: center;
 }
 
- .home .head {
+#home, #about, #projects, #contact {
+	height: 100vh;
+}
+
+ .head {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-
 }
 
 div .logo {
@@ -56,7 +59,7 @@ div .top-nav {
 
 #menu-button span {
   display: block;
-  position: absolute;
+  position: fixed;
   left: 72%;
   height: 8px;
   width: 50px;
@@ -130,21 +133,19 @@ div .top-nav {
 
 
 .top-nav nav {
-   margin-right: 125px;
    margin-top: 0.75em;
    float: right;
+   
 
 }
 
-.top-nav button {
+.top-nav a {
   font-size: 35px;
   background: transparent;
   color: black;
   text-shadow: 1px 0.5px #33F9FF;
   border: none;
-  
-
-}
+ }
 
 .btn:hover {
   background: rgba(0, 0, 0, 1);
@@ -154,8 +155,10 @@ div .top-nav {
 }
 
 .top-nav {
+	right: 475px;
 	display: none;
-
+	position: fixed;
+	z-index: 1;
 }
 
 .top-nav.open {
@@ -193,6 +196,44 @@ div .top-nav {
 	margin-top: 5%;
 	text-shadow: 4px 4px black;
 }
+
+
+#about {
+	width: 100%;
+	margin-top: 10%;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.bio-text {
+	width: 40%;
+	float: left;
+	font-size:24px;
+	color: white;
+	text-align: left;
+}
+
+.bio-pic {
+	width: 60%;
+	float: right;
+}
+
+#me {
+	border-radius: 100%;
+	width: 60%;
+	position: relative;
+	
+}
+
+
+
+
+
+
+
+
+
 
 @media(min-width: 801px) {
 	body, html {
