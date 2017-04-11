@@ -179,8 +179,8 @@ section #menu-button span {
 	font-size: 75px;
 }
 
-.tech {
-	font-size: 16px;
+.home .tech {
+	font-size: 22px;
 	color: black;
 	margin-top: 2%;
 	text-shadow: none;
@@ -188,7 +188,7 @@ section #menu-button span {
 	text-shadow: 0.5px 0.5px #33F9FF;
 }
 
-.home-social a {
+.home .home-social a {
 	font-size: 150px;
 	width: 33%;
 	margin-top: 5%;
